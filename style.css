@@ -1,0 +1,121 @@
+:root {
+    --bg: #0d0d0d;
+    --fg: #e5e5e5;
+    --fg2: #a9a9a9;
+    --accent: #4da3ff;
+    --card-bg: #1a1a1a;
+    --border: #2a2a2a;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+}
+
+/* NAVBAR SUPERIOR */
+nav {
+    width: 100%;
+    background: #000;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--border);
+    z-index: 20;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--fg);
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 19px;
+    color: var(--fg2);
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+.post {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin-bottom: 35px;
+    transition: 0.2s ease;
+}
+
+.post:hover {
+    border-color: var(--accent);
+}
+
+.post h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.meta {
+    color: var(--fg2);
+    font-size: 14px;
+    margin-bottom: 12px;
+    margin-top: 6px;
+}
+
+.post a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    color: var(--fg2);
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+}
